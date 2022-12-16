@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --font: 'Fraunces', serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(24, 23, 23);
+}
+
+/* MAIN */
+
+main{
+    width: 1000px;
+    margin: 0px auto;
+}
+
+/* HEADER */
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header div img {
+    border-radius: 8%;
+    height: 400px;
+    width: 300px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+
+    height: 100px;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+
+img {
+    padding: 10px;
+    height: 45px;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+#text{
+    height: 400px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px 10px;
+    gap: 50px;
+}
+
+#text a {
+    height: 25px;
+    border-bottom: 3px solid rgb(36, 80, 18);
+}
+
+/* texto */
+
+#name{
+   font-family: var(--font);
+    color: var(--White);
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--font);
+}
+
+h2{
+    color: white;
+    font-size: 30px;
+}
+
+h3{
+    padding: 0px 10px;
+    font-size: 50px;
+    color: white;
+    font-family: var(--font);
+    margin-bottom: 50px;
+}
+
+h4{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+h5{
+   letter-spacing: 7px;
+   font-size: 13px;
+   font-family: 'Fraunces', serif;
+   color: white;
+   opacity: 0.5;
+   margin-top: 10px;
+}
+
+h6{
+    font-family: 'Fraunces', serif;
+   font-size: 80px;
+   color: white;
+}
+
+aside div p {
+    opacity: 0.5;
+}
+
+p {
+    width: 50%;
+    font-family: 'Fraunces', serif;
+    color: white;
+    opacity: 0.7;
+}
+
+
+a{
+    color: white;
+    width: 102px;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section div {
+  padding: 20px;
+}
+
+#github{
+    height: 80px;
+    width: 80px;
+}
+
+section div h4,h5 {
+    padding: 0px 20px;
+}
+
+section div img {
+    border-radius: 8%;
+    height: 330px;
+    width: 450px;
+    cursor: pointer;
+}
+
+section div img:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color: rgb(44, 42, 42);
+    height: 50vh;
+    margin-top: 150px;
+}
+
+
+#container{
+    padding-top: 50px;
+    width: 1000px;
+    display: flex;
+    margin: 0px auto;
+}
+
+#container p{
+    padding: 10px 10px;
+    font-size: 13px;
+    font-family: 'Fraunces', serif;
+}
+
+
+
+@media (max-width: 700px) {
+
+    h1{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    #header div img {
+        height: 400px;
+        width: 200px;
+    }
+
+    main{
+        width: 300px;
+    }
+
+
+
+    aside{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    section div img{
+        height: 150px;
+        width: 200px;
+    }
+
+    #container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
