@@ -210,14 +210,14 @@ footer{
     cursor: pointer;
     padding-bottom: 10px;
     border-bottom: 4px solid rgb(93, 178, 189);
-    width: 101px;
+    width: 110px;
 }
 
 #boton #p1{
     cursor: pointer;
     padding-bottom: 10px;
     border-bottom: 4px solid rgb(93, 178, 189);
-    width: 85px;
+    width: 90px;
 }
 
 #boton button{
@@ -264,7 +264,7 @@ footer{
     }
 
     #boton #p1{
-        width: 53px;
+        width: 58px;
     }
     #boton p{
         width: 65px;
