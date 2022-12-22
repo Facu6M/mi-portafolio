@@ -18,7 +18,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 body{
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(30, 28, 28);
 }
 
 /* MAIN */
@@ -127,7 +127,7 @@ h5{
    margin-top: 10px;
 }
 
-h6{
+#container div h5{
     font-family: 'Fraunces', serif;
    font-size: 80px;
    color: white;
@@ -174,7 +174,6 @@ section div img {
     border-radius: 8%;
     height: 330px;
     width: 450px;
-    cursor: pointer;
 }
 
 section div img:hover{
@@ -201,7 +200,32 @@ footer{
     font-family: 'Fraunces', serif;
 }
 
+#boton{
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+}
 
+#boton p{
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(93, 178, 189);
+    width: 101px;
+}
+
+#boton #p1{
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgb(93, 178, 189);
+    width: 85px;
+}
+
+#boton button{
+    cursor: pointer;
+    background-color: rgb(37, 60, 37);
+    height: 30px;
+    width: 120px;
+}
 
 @media (max-width: 700px) {
 
@@ -237,5 +261,16 @@ footer{
     #container{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #boton #p1{
+        width: 53px;
+    }
+    #boton p{
+        width: 65px;
+    }
+
+    #boton{
+        gap: 0px;
     }
 }
